@@ -39,6 +39,8 @@ class ForgotPasswordActivity : AppCompatActivity() {
         }
     }
 
+    //  Last edit in this file (step 14) here
+
     private fun forgotPass(email: String) {
         FirebaseAuth.getInstance().sendPasswordResetEmail(email)
             .addOnCompleteListener { task ->
